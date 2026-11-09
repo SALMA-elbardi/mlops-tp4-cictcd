@@ -8,7 +8,6 @@ def test_model_quality_gate():
     assert metrics["accuracy"] >= params["quality_gate"]["min_accuracy"]
     assert metrics["f1"] >= params["quality_gate"]["min_f1"]
 
-
 def test_model_can_predict():
     model, _ = train()
     prediction = model.predict(["Ce produit est excellent"])

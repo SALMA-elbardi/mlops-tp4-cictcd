@@ -17,6 +17,7 @@ def build_model(params):
             LogisticRegression(
                 C=params["model"]["C"],
                 max_iter=params["model"]["max_iter"],
+                fit_intercept=False,
             ),
         ),
     ])

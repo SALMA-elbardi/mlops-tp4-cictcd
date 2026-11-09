@@ -19,5 +19,4 @@ def train():
         "accuracy": float(accuracy_score(y_test, y_pred)),
         "f1": float(f1_score(y_test, y_pred)),
     }
-
     return model, metrics
